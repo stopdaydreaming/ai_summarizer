@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* fixed tailwind error: https://flaviocopes.com/fix-unknown-at-rule-tailwind/ */
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
@@ -85,6 +86,9 @@
 
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+.purple_gradient {
+  @apply bg-gradient-to-r from-indigo-500 via-indigo-600 to-violet-500 bg-clip-text text-transparent;
 }
 
 .desc {
